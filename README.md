@@ -2,7 +2,12 @@
 custom labwc and other stuff configs for arch os
 ## how to run
 * backup.sh
-copy everything from local machine to local repo
+
+backup everything from local .config
 * restore.sh
-***BEWARE**
-overwrite everything in local .config from local repo
+
+***BEWARE***, this will overwrite everything in local .config
+## references
+* mostly from default config(/etc/xdg/*, /usr/share/doc/ or official sites)
+* https://www.reddit.com/r/swaywm/comments/tzrq6x/idling_and_locking_in_sway/
+* wp1978991-retro-games-wallpapers.jpg from https://wallpapercave.com/retro-games-wallpapers

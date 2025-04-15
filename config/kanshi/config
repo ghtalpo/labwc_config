@@ -1,0 +1,5 @@
+profile {
+#  output HDMI-A-1 position 1366,0
+  output DP-2 enable scale 1.0
+  output eDP-1 enable scale 1.5
+}
