@@ -3,3 +3,7 @@ profile {
   output DP-2 enable scale 1.0
   output eDP-1 enable scale 1.5
 }
+
+profile {
+  output eDP-1 enable scale 2
+}

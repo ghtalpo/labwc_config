@@ -1,5 +1,5 @@
 # labwc_config
-custom labwc and other stuff configs for arch os
+custom labwc and other stuffs configs for arch os
 ## how to run
 * backup.sh
 
@@ -7,6 +7,8 @@ backup everything from local .config
 * restore.sh
 
 ***BEWARE***, this will overwrite everything in local .config
+## requirements
+* rofi, foot, kanshi, sfwbar
 ## references
 * mostly from default config(/etc/xdg/*, /usr/share/doc/ or official sites)
 * https://www.reddit.com/r/swaywm/comments/tzrq6x/idling_and_locking_in_sway/
