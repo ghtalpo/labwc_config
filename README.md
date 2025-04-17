@@ -8,7 +8,7 @@ backup everything from local .config
 
 ***BEWARE***, this will overwrite everything in local .config
 ## requirements
-* rofi, foot, kanshi, sfwbar, grim, slurp, wl-clipboard
+* labwc, rofi, foot, kanshi, sfwbar, grim, slurp, wl-clipboard, ttf-firacode-nerd, swaybg, swayidle, swaylock
 ## references
 * mostly from default config(/etc/xdg/*, /usr/share/doc/ or official sites)
 * https://www.reddit.com/r/swaywm/comments/tzrq6x/idling_and_locking_in_sway/
