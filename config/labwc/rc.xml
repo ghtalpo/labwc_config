@@ -277,6 +277,12 @@
   <keybind key="W-d">
     <action name="Execute" command="~/bin/showdesktop.sh"/>
   </keybind>
+  <keybind key="Print">
+    <action name="Execute" command="~/bin/screenshotfull.sh"/>
+  </keybind>
+  <keybind key="S-Print">
+    <action name="Execute" command="~/bin/screenshotpart.sh"/>
+  </keybind>
   <keybind key="W-l">
 <!--
     <action name="Execute" command="swaylock -f"/>
@@ -320,6 +326,9 @@
     </keybind>
     <keybind key="W-Space">
       <action name="Execute" command="rofi -combi-modi window,drun,ssh -theme material -show combi" />
+    </keybind>
+    <keybind key="W-S-Space">
+      <action name="ShowMenu" menu="root-menu" />
     </keybind>
     <!--
     <keybind key="W-A-Left">

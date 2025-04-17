@@ -1,8 +1,11 @@
 # Example autostart file
 
+#swaybg -i /usr/share/backgrounds/labwall0-1920x1080.png -m fill >/dev/null 2>&1 &   
+#swaybg -i ~/다운로드/tyler-lastovich-1755wsQzce8-unsplash.jpg -m fill >/dev/null 2>&1 &   
+swaybg -i ~/다운로드/a_computer_room_with_a_desk_and_a_computer_monitor.jpg -m fill >/dev/null 2>&1 &   
+
 # Set background color.
-#swaybg -c '#113344' >/dev/null 2>&1 &
-swaybg -i ~/wallpapers/wp1978991-retro-games-wallpapers.jpg -m stretch >/dev/null 2>&1 &
+# swaybg -c '#113344' >/dev/null 2>&1 &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
@@ -13,15 +16,17 @@ swaybg -i ~/wallpapers/wp1978991-retro-games-wallpapers.jpg -m stretch >/dev/nul
 #   }
 kanshi >/dev/null 2>&1 &
 
-# Launch a panel such as yambar or waybar.
+# Launch a panel such as sfwbar or waybar.
+sfwbar --config mabox.config >/dev/null 2>&1 &
 #waybar >/dev/null 2>&1 &
-sfwbar >/dev/null 2>&1 &
-#sfwbar -config mabox.config >/dev/null 2>&1 &
 
 # Enable notifications. Typically GNOME/KDE application notifications go
 # through the org.freedesktop.Notifications D-Bus API and require a client such
 # as mako to function correctly. Thunderbird is an example of this.
 mako >/dev/null 2>&1 &
+
+Polkit agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Lock screen after 5 minutes; turn off display after another 5 minutes.
 #
@@ -31,10 +36,9 @@ mako >/dev/null 2>&1 &
 # (since a837fef). Instead use a wlr-output-power-management client such as
 # https://git.sr.ht/~leon_plickat/wlopm
 swayidle -w \
-	timeout 300 'swaylock -f -c 000000' \
-	timeout 600 'wlopm --off \*' \
-	resume 'wlopm --on \*' \
-	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+    timeout 300 'swaylock -f -c 000000' \
+    timeout 600 'wlopm --off \*' \
+    resume 'wlopm --on \*' \
+    before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
 
-lxqt-policykit-agent >/dev/null 2>&1 &
 fcitx5 >/dev/null 2>&1 &
