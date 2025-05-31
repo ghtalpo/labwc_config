@@ -14,7 +14,9 @@
     "modules-left": ["network", "wlr/taskbar"],
     "modules-center": ["clock"],
     //"modules-right": ["cpu", "memory", "battery"],
-    "modules-right": ["tray", "cpu", "memory", "battery", "backlight", "pulseaudio"],
+    //"modules-right": ["tray", "cpu", "memory", "battery", "backlight", "pulseaudio"],
+    "modules-right": ["tray", "cpu", "memory", "battery", "backlight", "wireplumber"],
+    //"modules-right": ["tray", "cpu", "memory", "battery", "backlight"],
     // "modules-right": ["cpu", "memory", "battery", "network", "tray"],
     // Modules configuration
     // "sway/workspaces": {
@@ -172,6 +174,12 @@
         },
         "on-click": "pavucontrol"
     },
+"wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "on-click": "helvum",
+    "format-icons": ["", "", ""]
+},
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",

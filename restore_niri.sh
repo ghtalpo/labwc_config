@@ -15,4 +15,8 @@ echo "* restore waybar scripts"
 mkdir -p ~/.config/waybar/
 cp -r config/waybar/* ~/.config/waybar/
 
+echo "* restore alacritty scripts"
+mkdir -p ~/.config/alacritty/
+cp -r config/alacritty/* ~/.config/alacritty/
+
 echo "done"

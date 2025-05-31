@@ -264,13 +264,13 @@ spawn-at-startup "mako"
 //spawn-at-startup "waybar"
 spawn-at-startup "dbus-run-session" "waybar"
 
-spawn-at-startup "swayidle" "-w" "timeout" "600" "niri msg action power-off-monitors" "timeout" "6000" "swaylock -f" "before-sleep" "swaylock -f"
+//spawn-at-startup "swayidle" "-w" "timeout" "600" "niri msg action power-off-monitors" "timeout" "6000" "swaylock -f" "before-sleep" "swaylock -f"
 
 spawn-at-startup "swaybg" "-i" "wallpapers/void_3.jpg"
 spawn-at-startup "fcitx5"
 spawn-at-startup "octoxbps-notifier"
 
-spawn-at-startup "alacritty"
+//spawn-at-startup "alacritty"
 
 spawn-at-startup "xwayland-satellite"
 environment {

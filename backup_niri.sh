@@ -15,4 +15,8 @@ echo "* backup waybar config"
 mkdir -p config/waybar/
 cp -r ~/.config/waybar/* config/waybar/
 
+echo "* backup alacritty config"
+mkdir -p config/alacritty/
+cp -r ~/.config/alacritty/* config/alacritty/
+
 echo "done"
