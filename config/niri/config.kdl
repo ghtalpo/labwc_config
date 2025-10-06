@@ -20,7 +20,7 @@ input {
             // from org.freedesktop.locale1. You can control these using
             // localectl set-x11-keymap.
             layout "us"
-            options "caps:super" # caps to super
+            options "caps:super"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
@@ -273,11 +273,9 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 
-# spawn mine here
 spawn-at-startup "mako"
 //spawn-at-startup "swaybg" "-i" "wallpapers/void_3.jpg"
 spawn-at-startup "swaybg" "-i" "wallpapers/a_video_game_screen_with_trees_and_bushes.jpg"

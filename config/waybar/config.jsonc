@@ -47,7 +47,7 @@
   "niri/window": {
     "format": "{}",
     "rewrite": {
-      "(.*) - Mozilla Firefox": "🌎 $1",
+      "(.*) — Mozilla Firefox": "🌎 $1",
       "(.*) - zsh": "> [$1]",
     },
   },
