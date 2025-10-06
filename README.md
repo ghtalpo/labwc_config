@@ -23,5 +23,5 @@ backup everything from local .config
 * https://osowoso.github.io/Void-Wallpapers/
 
 # fonts for niri/eos?
-* otf-font-awesome
+* otf-font-awesome ttf-firacode-nerds
 
