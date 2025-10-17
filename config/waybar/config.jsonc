@@ -18,7 +18,7 @@
   "modules-right": [
     // "network",
     "tray",
-    "custom/yay",
+    "custom/updates",
     "bluetooth",
     "cpu",
     "memory",
@@ -30,6 +30,7 @@
     //    "custom/notification",
     "pulseaudio",
     "clock",
+    "custom/exit",
   ],
   "niri/workspaces": {
     "format": "{icon}",
@@ -80,14 +81,6 @@
   "custom/layout": {
     "tooltip": false,
     "exec": "swaymsg -mrt subscribe '[\"input\"]' | jq -r --unbuffered \"select(.change == \\\"xkb_layout\\\") | .input | select(.type == \\\"keyboard\\\") | .xkb_active_layout_name | .[0:2]\"",
-  },
-  "custom/yay": {
-    "format": "{} ",
-    "interval": 3600,
-    "exec": "pacman -Qu | wc -l; echo 'packages to update'",
-    "exec-if": "exit 0",
-    "on-click": "exec alacritty -e sh -c 'yay -Syu; pkill -SIGRTMIN+8 waybar'",
-    "signal": 8,
   },
   "custom/zypper": {
     "format": "{} ",
@@ -211,7 +204,7 @@
     "on-click-right": "exec alacritty -e sh -c 'bluetoothctl'",
   },
   "pulseaudio": {
-    "format": "{icon}",
+    "format": "{icon} ",
     "format-alt": "{volume} {icon}",
     "format-alt-click": "click-middle",
     "format-muted": "",
@@ -253,5 +246,23 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
+  },
+  // Updates Count
+  "custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+      "has-updates": "󱍷",
+      "updated": "󰂪",
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300",
+  },
+
+  // Power Menu
+  "custom/exit": {
+    "format": " 󰐥 ",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
+    "tooltip-format": "Power Menu",
   },
 }

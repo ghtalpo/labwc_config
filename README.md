@@ -22,6 +22,7 @@ backup everything from local .config
 * https://github.com/YaLTeR/dotfiles/tree/3600ae2db33aecfeee00201ac0fe5e584902c1f0/common/.config/waybar
 * https://osowoso.github.io/Void-Wallpapers/
 
+## niri(for eos)
 # fonts for niri/eos?
 * otf-font-awesome ttf-firacode-nerds
-
+* wofi waybar-module-pacman-updates-git
