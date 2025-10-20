@@ -108,6 +108,10 @@ input {
     position x=1280 y=0
 }
 
+output "DP-2" {
+    focus-at-startup
+}
+
 output "eDP-1" {
     scale 1.75
 }
