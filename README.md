@@ -25,4 +25,4 @@ backup everything from local .config
 ## niri(for eos)
 # fonts for niri/eos?
 * otf-font-awesome ttf-firacode-nerds
-* wofi waybar-module-pacman-updates-git
+* waybar-module-pacman-updates-git
