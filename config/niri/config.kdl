@@ -282,7 +282,8 @@ spawn-at-startup "waybar"
 
 spawn-at-startup "mako"
 //spawn-at-startup "swaybg" "-i" "wallpapers/void_3.jpg"
-spawn-at-startup "swaybg" "-i" "wallpapers/a_video_game_screen_with_trees_and_bushes.jpg"
+//spawn-at-startup "swaybg" "-i" "wallpapers/a_video_game_screen_with_trees_and_bushes.jpg"
+spawn-at-startup "swaybg" "-i" "wallpapers/1-ristretto.jpg"
 spawn-at-startup "lxqt-policykit-agent" // to mount partion from thunar
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
