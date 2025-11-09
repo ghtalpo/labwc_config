@@ -249,8 +249,8 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300",
-    "on-click": "~/.config/waybar/scripts/waybar-restart-ex.sh",
-    "on-click-right": "exec ghostty -e sh -c 'yay -Syu; pkill -SIGRTMIN+8 waybar'",
+    "on-click": "exec ghostty -e sh -c 'yay -Syu; pkill -SIGRTMIN+8 waybar'",
+    "on-click-right": "~/.config/waybar/scripts/waybar-restart-ex.sh",
   },
 
   // Power Menu
