@@ -645,5 +645,11 @@ binds {
 
 // disable alt-tab
 recent-windows {
-    off
+    //off
+    binds {
+        Mod+Tab         { next-window     scope="output"; }
+        Mod+Shift+Tab   { previous-window scope="output"; }
+        Mod+grave       { next-window     scope="output" filter="app-id"; }
+        Mod+Shift+grave { previous-window scope="output" filter="app-id"; }
+    }
 }
