@@ -25,7 +25,5 @@ backup everything from local .config
 ## niri(for eos)
 # fonts for niri/eos?
 * otf-font-awesome ttf-firacode-nerds
-# waybar-module-pacman-updates-git ghostty noctalia-shell
-* start noctalia-shell
-systemctl --user enable noctalia.service
-# -swaylock fuzzel swaybg swayidle
+# ghostty dms(https://danklinux.com/)
+# -waybar fuzzel mako alacritty swaylock fuzzel swaybg swayidle
