@@ -129,7 +129,7 @@ environment {
     //XMODIFIERS "im=fcitx"
 }
 
-// lauunch ime, jkim
+// launch ime, jkim
 spawn-at-startup "fcitx5"
 binds {
     // === Application Launchers ===
