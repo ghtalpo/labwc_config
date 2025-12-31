@@ -22,6 +22,7 @@ input {
         numlock
     }
     touchpad {
+	disabled-on-external-mouse
     }
     mouse {
     }
@@ -133,8 +134,8 @@ environment {
 spawn-at-startup "fcitx5"
 binds {
     // === Application Launchers ===
-    Mod+Shift+Q hotkey-overlay-title="Power Menu" {
-        spawn "dms" "ipc" "call" "powermenu" "open";
+    Mod+X hotkey-overlay-title="Power Menu" {
+        spawn "dms" "ipc" "call" "powermenu" "toggle";
     }
 }
 
