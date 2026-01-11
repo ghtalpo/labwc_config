@@ -24,6 +24,6 @@ backup everything from local .config
 
 ## niri(for eos)
 # fonts for niri/eos?
-* otf-font-awesome ttf-firacode-nerds
+* otf-font-awesome ttf-firacode-nerds jetbrains-mono-nerd
 # ghostty dms(https://danklinux.com/)
 # -waybar fuzzel mako alacritty swaylock fuzzel swaybg swayidle
