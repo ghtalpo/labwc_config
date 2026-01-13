@@ -272,7 +272,8 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+// Do not: better spawn from systemctl
+//spawn-at-startup "waybar"
 spawn-at-startup "fcitx5"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "wallpapers/Endy_vector_satelliet.png"
 spawn-at-startup "lxqt-policykit-agent" // to mount partion from thunar
@@ -630,6 +631,8 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    Mod+X hotkey-overlay-title="Power menu: fuzzel" { spawn "~/bin/power_menu.sh"; }
 }
 
 environment {
