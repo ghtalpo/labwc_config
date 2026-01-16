@@ -273,7 +273,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // Do not: better spawn from systemctl
-//spawn-at-startup "waybar"
+spawn-at-startup "waybar"
 spawn-at-startup "fcitx5"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "wallpapers/Endy_vector_satelliet.png"
 spawn-at-startup "lxqt-policykit-agent" // to mount partion from thunar
