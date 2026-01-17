@@ -19,6 +19,7 @@ backup everything from local .config
 * backup_niri.sh
 * restore_niri.sh
 * fuzzel mako alacritty swaybg swayidle swaylock xwayland-satellite Waybar xdg-desktop-portal-gtk xdg-desktop-portal-gnome nerd-fonts-symbols-ttf
+* nautilus for flatpak ( https://github.com/YaLTeR/niri/wiki/Important-Software )
 * https://github.com/YaLTeR/dotfiles/tree/3600ae2db33aecfeee00201ac0fe5e584902c1f0/common/.config/waybar
 * https://osowoso.github.io/Void-Wallpapers/
 
