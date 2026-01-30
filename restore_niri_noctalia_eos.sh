@@ -1,7 +1,7 @@
 # !/bin/sh
 echo "* restore custom wallpapers"
-mkdir -p ~/wallpapers/
-cp -r wallpapers/* ~/wallpapers/
+mkdir -p ~/Pictures/Wallpapers/
+cp -r wallpapers/* ~/Pictures/Wallpapers/
 
 echo "* restore custom scripts"
 mkdir -p ~/bin/
