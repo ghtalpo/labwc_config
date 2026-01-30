@@ -276,6 +276,7 @@ layout {
 //spawn-at-startup "waybar"
 
 //spawn-at-startup "lxqt-policykit-agent" // mount partition from thunar
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" // mount partition from thunar
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
